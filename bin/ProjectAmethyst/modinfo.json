@@ -1,0 +1,12 @@
+
+{
+	"type": "content",
+	"name": "Purple Rock",
+	"modid": "purplerock",
+	"description" : "Adds purplerock ",
+	"authors": [ "Novocain""Tony Liberatto"],
+	"version": "1.0.0",
+  "dependencies": {
+    "game": "1.7.8",
+  }
+}
