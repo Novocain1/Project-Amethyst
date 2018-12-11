@@ -1,0 +1,13 @@
+{
+	code: "purplerock-dust",
+	variantgroups: [
+		{ code: "type", states: ["junction", "ninety", "straight"] },
+		{ code: "active", states: ["lit", "unlit"] },
+		
+	],
+	creativeinventory: { "general": ["*"]  },
+	
+	shape: { base: "block/dust" },
+	textures: { "all": { base: "block/dust/{type}-{active}" }
+	}
+}
