@@ -1,0 +1,21 @@
+{
+	code: "amethyst-dust-straight",
+	variantgroups: [
+		
+		{ code: "active", states: ["lit", "unlit"] },
+		
+	],
+	creativeinventory: { "general": ["*"]  },
+	sidesolid: { all: false },
+	sideopaque: { all: false },
+	replaceable: 4000,
+	blockmaterial: "Cloth",
+	shape: { base: "block/dust" },
+	textures: { "all": { base: "block/dust/straight-{active}" }
+	},
+	collisionbox: null,
+	selectionbox: {
+		x1: 0, y1: 0, z1: 0, 
+		x2: 1, y2: 0.001, z2: 1,
+		}
+}
