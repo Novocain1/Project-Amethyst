@@ -1,5 +1,6 @@
 {
-	code: "amethyst-dust-straight",
+	entityclass: "PoweredBlock",
+  code: "amethyst-dust-straight",
 	variantgroups: [
 		
 		{ code: "active", states: ["lit", "unlit"] },
