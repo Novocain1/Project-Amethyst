@@ -72,6 +72,7 @@
     </Reference>
     <Reference Include="Vintagestory">
       <HintPath>..\VS-1.7.8\Vintagestory\Vintagestory.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="VintagestoryAPI">
       <HintPath>..\VS-1.7.8\Vintagestory\VintagestoryAPI.dll</HintPath>
@@ -118,8 +119,6 @@
     <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\item\amethyst-ore.png" />
     <Content Include="bin\ProjectAmethyst\Project Amethyst.dll" />
     <Content Include="bin\ProjectAmethyst\Project Amethyst.pdb" />
-    <Content Include="bin\ProjectAmethyst\Vintagestory.exe" />
-    <Content Include="bin\ProjectAmethyst\VintagestoryLib.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
