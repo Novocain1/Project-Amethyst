@@ -1,10 +1,9 @@
-
 {
-	"type": "content",
-	"name": "Purple Rock",
-	"modid": "purplerock",
+	"type": "code",
+	"name": "Project Amethyst",
+	"modid": "amethyst",
 	"description" : "Adds purplerock ",
-	"authors": [ "Novocain""Tony Liberatto"],
+	"authors": [ "Novocain", "Tony Liberatto"],
 	"version": "1.0.0",
   "dependencies": {
     "game": "1.7.8",

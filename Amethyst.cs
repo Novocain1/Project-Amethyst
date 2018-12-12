@@ -8,6 +8,7 @@ namespace ProjectAmethyst
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
+            api.RegisterBlockEntityClass("PoweredBlock", typeof (PoweredBlock));
         }
     }
 }

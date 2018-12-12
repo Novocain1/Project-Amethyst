@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProjectAmethyst</RootNamespace>
-    <AssemblyName>Project Amethyst</AssemblyName>
+    <AssemblyName>ProjectAmethyst</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="cairo-sharp">
@@ -88,11 +90,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PoweredBlock.cs" />
     <Compile Include="Amethyst.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\" />
+    <Folder Include="bin\ProjectAmethyst\assets\amethyst\itemtypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\purplerock-dust.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\dust.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-base.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-top.json" />
+    <None Include="bin\ProjectAmethyst\modinfo.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\ore\amethyst-ore.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\item\amethyst-dust.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\item\amethyst-ore.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
