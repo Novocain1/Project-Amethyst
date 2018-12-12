@@ -1,5 +1,5 @@
 {
-  code: "amethyst-dust-straight",
+  code: "amethyst-dust-isolated",
   behaviors: [
     { name: "AmethystSwapping" },
   ],
@@ -16,7 +16,7 @@
 	blockmaterial: "Cloth",
   drawtype: "json",
 	shape: { base: "block/dust" },
-	textures: { "all": { base: "block/dust/straight-{active}" }
+	textures: { "all": { base: "block/dust/isolated-{active}" }
 	},
 	dropsByType: {
 		"*": [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],

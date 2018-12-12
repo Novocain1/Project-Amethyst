@@ -89,13 +89,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amethyst.cs" />
+    <Compile Include="AmethystSwapping.cs" />
+    <Compile Include="ItemAmethystDust.cs" />
     <Compile Include="PoweredBlock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="bin\ProjectAmethyst\assets\amethyst\itemtypes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-tjunction.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-ninety.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-junction.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-isolated.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-straight.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\dust.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-base.json" />

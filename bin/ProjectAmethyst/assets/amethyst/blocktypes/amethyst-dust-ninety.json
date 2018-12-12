@@ -1,6 +1,8 @@
 {
-	entityclass: "PoweredBlock",
   code: "amethyst-dust-ninety",
+  behaviors: [
+    { name: "AmethystSwapping" },
+  ],
 	variantgroups: [
 		
 		{ code: "active", states: ["lit", "unlit"] },
@@ -15,6 +17,9 @@
   drawtype: "json",
 	shape: { base: "block/dust" },
 	textures: { "all": { base: "block/dust/ninety-{active}" }
+	},
+	dropsByType: {
+		"*": [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],
 	},
 	collisionbox: null,
 	selectionbox: {

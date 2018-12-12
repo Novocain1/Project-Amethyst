@@ -8,7 +8,8 @@ namespace ProjectAmethyst
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
-            api.RegisterBlockEntityClass("PoweredBlock", typeof (PoweredBlock));
+            api.RegisterBlockBehaviorClass("AmethystSwapping", typeof(AmethystSwapping));
+            api.RegisterItemClass("ItemAmethystDust", typeof(ItemAmethystDust));
         }
     }
 }
