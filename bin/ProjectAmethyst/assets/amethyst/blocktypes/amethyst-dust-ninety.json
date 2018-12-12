@@ -9,6 +9,7 @@
 	creativeinventory: { "general": ["*"]  },
 	sidesolid: { all: false },
 	sideopaque: { all: false },
+  sideAo: { all: false},
 	replaceable: 4000,
 	blockmaterial: "Cloth",
   drawtype: "json",

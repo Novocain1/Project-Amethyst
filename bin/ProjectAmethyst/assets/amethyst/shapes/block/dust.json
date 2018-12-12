@@ -12,6 +12,8 @@
 			"name": "Face",
 			"from": [ 0.0, 0.0, 0.1 ], 
 			"to": [ 16.0, 16.0, 0.1 ], 
+			"shade": false,
+			"renderPass": 1,
 			"rotationOrigin": [ 8.0, 8.0, 8.0 ],
 			"rotationX": -90.0,
 			"faces": {
