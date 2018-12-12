@@ -70,10 +70,6 @@
       <HintPath>..\VS-1.7.8\Vintagestory\Lib\Tavis.JsonPatch.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Vintagestory">
-      <HintPath>..\VS-1.7.8\Vintagestory\Vintagestory.exe</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="VintagestoryAPI">
       <HintPath>..\VS-1.7.8\Vintagestory\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
@@ -97,26 +93,26 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-ninety.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-junction.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-straight.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\dust.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\repeater-base.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\repeater-top.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-ninety.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-junction.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-straight.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\dust.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-base.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-top.json" />
     <None Include="bin\ProjectAmethyst\modinfo.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\junction-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\junction-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\ninety-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\ninety-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\straight-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\straight-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\tjunction-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\tjunction-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\ore\amethyst-ore.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\item\amethyst-dust.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\item\amethyst-ore.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\ore\amethyst-ore.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\item\amethyst-dust.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\item\amethyst-ore.png" />
     <Content Include="bin\ProjectAmethyst\Project Amethyst.dll" />
     <Content Include="bin\ProjectAmethyst\Project Amethyst.pdb" />
   </ItemGroup>

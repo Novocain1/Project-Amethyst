@@ -1,5 +1,6 @@
 {
-	code: "amethyst-dust-ninety",
+	entityclass: "PoweredBlock",
+  code: "amethyst-dust-junction",
 	variantgroups: [
 		
 		{ code: "active", states: ["lit", "unlit"] },
@@ -11,7 +12,7 @@
 	replaceable: 4000,
 	blockmaterial: "Cloth",
 	shape: { base: "block/dust" },
-	textures: { "all": { base: "block/dust/ninety-{active}" }
+	textures: { "all": { base: "block/dust/junction-{active}" }
 	},
 	collisionbox: null,
 	selectionbox: {
