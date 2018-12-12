@@ -11,6 +11,7 @@
 	sideopaque: { all: false },
 	replaceable: 4000,
 	blockmaterial: "Cloth",
+  drawtype: "json",
 	shape: { base: "block/dust" },
 	textures: { "all": { base: "block/dust/straight-{active}" }
 	},
