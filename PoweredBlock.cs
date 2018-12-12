@@ -16,26 +16,16 @@ namespace ProjectAmethyst
         public override void Initialize(ICoreAPI api)
         {
             base.Initialize(api);
-            listenerId = RegisterGameTickListener(ticker, 32);
+            listenerId = RegisterGameTickListener(check, 32);
         }
 
-        private void ticker(float dt)
-        {
-            Check();
-        }
-
-        public override void OnBlockUnloaded()
-        {
-            base.OnBlockUnloaded();
-            api.World.UnregisterGameTickListener(listenerId);
-        }
-        private void Check()
+        private void check(float dt)
         {
             BlockPos offset = new BlockPos(1, 2, 1);
             Block block = api.World.BlockAccessor.GetBlock(pos);
             string src = block.Code.ToString();
-            AssetLocation src1 = new AssetLocation(src.Replace("unlit", "lit"));
-            AssetLocation src0 = new AssetLocation(src.Replace("lit", "unlit"));
+            AssetLocation src1 = new AssetLocation(src.Replace("-unlit", "-lit"));
+            AssetLocation src0 = new AssetLocation(src.Replace("-lit", "-unlit"));
 
             for (int x = pos.X - offset.X; x <= pos.X + offset.X; x++)
             {
@@ -54,6 +44,12 @@ namespace ProjectAmethyst
             }
             api.World.BlockAccessor.SetBlock(api.World.GetBlock(src0).BlockId, pos);
             return;
+        }
+
+        public override void OnBlockUnloaded()
+        {
+            base.OnBlockUnloaded();
+            api.World.UnregisterGameTickListener(listenerId);
         }
     }
 }
