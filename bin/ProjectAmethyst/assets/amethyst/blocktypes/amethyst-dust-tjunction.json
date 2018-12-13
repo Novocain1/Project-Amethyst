@@ -1,8 +1,6 @@
 {
+  entityclass: "PoweredBlock",
   code: "amethyst-dust-tjunction",
-  behaviors: [
-    { name: "AmethystSwapping" },
-  ],
 	variantgroups: [
 		
 		{ code: "active", states: ["lit", "unlit"] },

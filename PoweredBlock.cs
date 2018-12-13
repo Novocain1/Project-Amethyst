@@ -1,5 +1,4 @@
-﻿/*
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +12,7 @@ namespace ProjectAmethyst
     class PoweredBlock : BlockEntity
     {
         public long listenerId;
+        IPlayer player;
 
         public override void Initialize(ICoreAPI api)
         {
@@ -27,6 +27,12 @@ namespace ProjectAmethyst
             string src = block.Code.ToString();
             AssetLocation src1 = new AssetLocation(src.Replace("-unlit", "-lit"));
             AssetLocation src0 = new AssetLocation(src.Replace("-lit", "-unlit"));
+
+            if (api.World.BlockAccessor.GetBlock(new BlockPos(pos.X, pos.Y - 1, pos.Z)).Id == 0)
+            {
+                api.World.BlockAccessor.BreakBlock(pos, player);
+                return;
+            }
 
             for (int x = pos.X - offset.X; x <= pos.X + offset.X; x++)
             {
@@ -55,4 +61,3 @@ namespace ProjectAmethyst
         }
     }
 }
-*/
