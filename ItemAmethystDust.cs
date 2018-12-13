@@ -11,7 +11,6 @@ namespace ProjectAmethyst
 {
     class ItemAmethystDust : Item
     {
-        IPlayer player;
         public override void OnHeldInteractStart(IItemSlot slot, IEntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, ref EnumHandHandling handling)
         {
             BlockPos pos = blockSel.Position;

@@ -56,9 +56,11 @@
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\VS-1.7.8\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="protobuf-net">
       <HintPath>..\VS-1.7.8\Vintagestory\Lib\protobuf-net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Amethyst.cs" />
+    <Compile Include="ItemAmethystDust.cs" />
     <Compile Include="PoweredBlock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,28 +106,7 @@
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-junction.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-ninety.json" />
     <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-straight.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-ninety.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-junction.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\blocktypes\amethyst-dust-straight.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\dust.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\repeater-base.json" />
-    <None Include="bin\ProjectAmethyst\assets\purplerock\shapes\block\repeater-top.json" />
     <None Include="bin\ProjectAmethyst\modinfo.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\junction-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\junction-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\ninety-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\ninety-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\straight-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\straight-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\tjunction-lit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\dust\tjunction-unlit.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\block\ore\amethyst-ore.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\item\amethyst-dust.png" />
-    <Content Include="bin\ProjectAmethyst\assets\purplerock\textures\item\amethyst-ore.png" />
-    <Content Include="bin\ProjectAmethyst\Project Amethyst.dll" />
-    <Content Include="bin\ProjectAmethyst\Project Amethyst.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

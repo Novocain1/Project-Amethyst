@@ -17,11 +17,14 @@ namespace ProjectAmethyst
         public override void Initialize(ICoreAPI api)
         {
             base.Initialize(api);
-            listenerId = RegisterGameTickListener(Check, 100);
+            listenerId = RegisterGameTickListener(Check, 16);
         }
 
         private void Check(float dt)
         {
+            if (api.World.Side == EnumAppSide.Client) return;
+
+            HashSet<BlockPos> localDust = new HashSet<BlockPos>();
             BlockPos offset = new BlockPos(1, 2, 1);
             Block block = api.World.BlockAccessor.GetBlock(pos);
             string src = block.Code.ToString();
@@ -41,12 +44,20 @@ namespace ProjectAmethyst
                     for (int z = pos.Z - offset.Z; z <= pos.Z + offset.Z; z++)
                     {
                         BlockPos cBP = new BlockPos(x, y, z);
-                        if (api.World.BlockAccessor.GetBlock(cBP).FirstCodePart() == "amethyst" && api.World.BlockAccessor.GetBlock(cBP).LastCodePart() == "lit" && cBP != pos)
+                        if (api.World.BlockAccessor.GetBlock(cBP).FirstCodePart() == "amethyst" && cBP != pos)
                         {
-                            api.World.BlockAccessor.SetBlock(api.World.GetBlock(src1).BlockId, pos);
-                            return;
+                            localDust.Add(cBP);
                         }
                     }
+                }
+            }
+
+            foreach (var val in localDust)
+            {
+                if (api.World.BlockAccessor.GetBlock(val).LastCodePart() == "lit")
+                {
+                    api.World.BlockAccessor.SetBlock(api.World.GetBlock(src1).BlockId, pos);
+                    return;
                 }
             }
 
