@@ -1,27 +1,40 @@
 {
   entityclass: "PoweredBlock",
   code: "amethyst-dust-straight",
-	variantgroups: [
-		
-		{ code: "active", states: ["lit", "unlit"] },
-		
-	],
+
+  variantgroups: [
+		{ code: "place", states: [ "top", "bottom", "siden", "sidee", "sides", "sidew"]},
+		{ code: "direction", states: [ "ud", "ew", "ns" ]},
+		{ code: "active", states: [ "lit", "unlit"] }
+  ],
 	creativeinventory: { "general": ["*"]  },
 	sidesolid: { all: false },
 	sideopaque: { all: false },
-  sideAo: { all: false},
+	sideAo: { all: false},
 	replaceable: 4000,
 	blockmaterial: "Cloth",
-  drawtype: "json",
-	shape: { base: "block/dust" },
-	textures: { "all": { base: "block/dust/straight-{active}" }
-	},
-	dropsByType: {
-		"*": [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],
-	},
+	drawtype: "json",
+	shapeByType: {
+		"*-bottom-ns-*": { base: "block/dust", rotateY: 0, rotateZ: 0 },
+		"*-bottom-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 0 },
+		"*-top-ns-*": { base: "block/dust", rotateY: 0, rotateZ: 180 },
+		"*-top-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 180 },
+		"*-siden-ud-*": { base: "block/dust", rotateY: 0, rotateZ: 90 },
+		"*-siden-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 90 },
+		"*-sidee-ud-*": { base: "block/dust", rotateY: 90, rotateX: 90 },
+		"*-sidee-ns-*": { base: "block/dust", rotateY: 0, rotateX: 90 },
+		"*-sides-ud-*": { base: "block/dust", rotateY: 0, rotateZ: 270 },
+		"*-sides-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 270 },
+		"*-sidew-ud-*": { base: "block/dust", rotateY: 90, rotateX: 270 },
+		"*-sidew-ns-*": { base: "block/dust", rotateY: 0, rotateX: 270 }
+		},
+	textures: {
+		all: { base: "block/dust/straight-{active}" },
+		},
+	drops: [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],
 	collisionbox: null,
 	selectionbox: {
 		x1: 0, y1: 0, z1: 0, 
 		x2: 1, y2: 0.001, z2: 1,
-		}
+	}
 }
