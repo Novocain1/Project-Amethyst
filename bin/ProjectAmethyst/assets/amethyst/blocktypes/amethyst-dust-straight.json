@@ -1,5 +1,5 @@
 {
-	entityclass: "PoweredBlock",
+  entityclass: "PoweredBlock",
   code: "amethyst-dust-straight",
 	variantgroups: [
 		
@@ -9,10 +9,15 @@
 	creativeinventory: { "general": ["*"]  },
 	sidesolid: { all: false },
 	sideopaque: { all: false },
+  sideAo: { all: false},
 	replaceable: 4000,
 	blockmaterial: "Cloth",
+  drawtype: "json",
 	shape: { base: "block/dust" },
 	textures: { "all": { base: "block/dust/straight-{active}" }
+	},
+	dropsByType: {
+		"*": [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],
 	},
 	collisionbox: null,
 	selectionbox: {

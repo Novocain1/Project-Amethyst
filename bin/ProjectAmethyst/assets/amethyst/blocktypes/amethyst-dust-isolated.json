@@ -1,6 +1,6 @@
 {
   entityclass: "PoweredBlock",
-  code: "amethyst-dust-ninety",
+  code: "amethyst-dust-isolated",
 	variantgroups: [
 		
 		{ code: "active", states: ["lit", "unlit"] },
@@ -14,7 +14,7 @@
 	blockmaterial: "Cloth",
   drawtype: "json",
 	shape: { base: "block/dust" },
-	textures: { "all": { base: "block/dust/ninety-{active}" }
+	textures: { "all": { base: "block/dust/isolated-{active}" }
 	},
 	dropsByType: {
 		"*": [ { type: "item", code: "amethyst-dust", quantity: { avg: 1 }  } ],

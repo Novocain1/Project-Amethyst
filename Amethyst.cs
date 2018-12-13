@@ -9,6 +9,7 @@ namespace ProjectAmethyst
         {
             base.Start(api);
             api.RegisterBlockEntityClass("PoweredBlock", typeof (PoweredBlock));
+            api.RegisterItemClass("ItemAmethystDust", typeof(ItemAmethystDust));
         }
     }
 }
