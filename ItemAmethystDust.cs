@@ -13,12 +13,13 @@ namespace ProjectAmethyst
     {
         public override void OnHeldInteractStart(IItemSlot slot, IEntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, ref EnumHandHandling handling)
         {
+            handling = EnumHandHandling.PreventDefault;
             BlockPos pos = blockSel.Position;
             
             AssetLocation asset = new AssetLocation("amethyst:amethyst-dust-isolated-unlit");
             if (pos != null && !api.World.BlockAccessor.GetBlock(pos + new BlockPos(0, 1, 0)).WildCardMatch(new AssetLocation("amethyst:amethyst-dust*")) && !api.World.BlockAccessor.GetBlock(pos).WildCardMatch(new AssetLocation("amethyst:amethyst-dust*")))
             {
-                api.World.BlockAccessor.SetBlock(api.World.BlockAccessor.GetBlock(asset).BlockId, pos + new BlockPos(0,1,0));
+                api.World.BlockAccessor.SetBlock(api.World.BlockAccessor.GetBlock(asset).BlockId, pos.UpCopy());
                 slot.TakeOut(1);
                 slot.MarkDirty();
                 api.World.PlaySoundAt(api.World.BlockAccessor.GetBlock(asset).Sounds.Place, pos.X, pos.Y, pos.Z);

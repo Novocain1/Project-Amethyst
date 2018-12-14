@@ -22,8 +22,6 @@ namespace ProjectAmethyst
 
         private void Check(float dt)
         {
-            if (api.World.Side == EnumAppSide.Client) return;
-
             HashSet<BlockPos> localDust = new HashSet<BlockPos>();
             BlockPos offset = new BlockPos(1, 2, 1);
             Block block = api.World.BlockAccessor.GetBlock(pos);
