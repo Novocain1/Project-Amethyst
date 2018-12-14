@@ -101,12 +101,41 @@
     <Compile Include="PoweredBlock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-junction.json" />
-    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-ninety.json" />
-    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-dust-straight.json" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\amethyst-block.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\isolated-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\isolated-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\junction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\ninety-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\straight-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-lit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\block\dust\tjunction-unlit.png" />
+    <Content Include="bin\ProjectAmethyst\assets\game\textures\block\stone\ore\amethyst3.png" />
+    <Content Include="bin\ProjectAmethyst\assets\game\textures\block\stone\ore\amethyst2.png" />
+    <Content Include="bin\ProjectAmethyst\assets\game\textures\block\stone\ore\amethyst1.png" />
+    <Content Include="bin\ProjectAmethyst\assets\amethyst\textures\item\amethyst-dust.png" />
+    <Content Include="bin\ProjectAmethyst\assets\game\textures\item\resource\ore\amethyst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\dust\amethyst-dust-isolated.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\dust\amethyst-dust-junction.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\dust\amethyst-dust-ninety.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\dust\amethyst-dust-straight.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\dust\amethyst-dust-tjunction.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\blocktypes\amethyst-block.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\itemtypes\amethyst-dust.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\dust.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-base.json" />
+    <None Include="bin\ProjectAmethyst\assets\amethyst\shapes\block\repeater-top.json" />
+    <None Include="bin\ProjectAmethyst\assets\game\blocktypes\stone\ore.json" />
+    <None Include="bin\ProjectAmethyst\assets\game\worldgen\deposits.json" />
+    <None Include="bin\ProjectAmethyst\assets\game\worldproperties\block\ore.json" />
+    <None Include="bin\ProjectAmethyst\assets\game\worldproperties\block\orewithflint.json" />
     <None Include="bin\ProjectAmethyst\modinfo.json" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

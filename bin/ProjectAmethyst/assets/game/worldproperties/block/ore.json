@@ -1,0 +1,71 @@
+{
+	"code": "ore",
+	"variants": [
+		{
+			"Code": "amethyst",
+		},
+		{
+			"Code": "lignite",
+		},
+		{
+			"Code": "bituminouscoal",
+		},
+		{
+			"Code": "nativecopper",
+		},
+		{
+			"Code": "limonite",
+		},
+		{
+			"Code": "quartz_nativegold",
+		},
+		{
+			"Code": "galena",
+		},
+		{
+			"Code": "cassiterite",
+		},
+		{
+			"Code": "chromite",
+		},
+		{
+			"Code": "platinum",
+		},
+		{
+			"Code": "ilmenite",
+		},
+		{
+			"Code": "sphalerite",
+		},
+		{
+			"Code": "rocksalt_sylvite",
+		},
+		{
+			"Code": "quartz_nativesilver",
+		},
+		{
+			"Code": "lapislazuli",
+		},
+		{
+			"Code": "diamond",
+		},
+		{
+			"Code": "emerald",
+		},
+		{
+			"Code": "bismuthinite",
+		},
+		{
+			"Code": "quartz",
+		},
+		{
+			"Code": "rocksalt",
+		},
+		{
+			"Code": "sulfur",
+		},
+		{
+			"Code": "magnetite",
+		}
+	]
+}
