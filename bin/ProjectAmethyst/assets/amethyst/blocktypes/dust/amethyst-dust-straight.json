@@ -23,7 +23,7 @@
 		"*-siden-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 90 },
 		"*-sidee-ud-*": { base: "block/dust", rotateY: 90, rotateX: 90 },
 		"*-sidee-ns-*": { base: "block/dust", rotateY: 0, rotateX: 90 },
-		"*-sides-ud-*": { base: "block/dust", rotateY: 0, rotateZ: 270 },
+		"*-sides-ud-*": { base: "block/dust", rotateY: 0, rotateX: 270 },
 		"*-sides-ew-*": { base: "block/dust", rotateY: 90, rotateZ: 270 },
 		"*-sidew-ud-*": { base: "block/dust", rotateY: 90, rotateX: 270 },
 		"*-sidew-ns-*": { base: "block/dust", rotateY: 0, rotateX: 270 }
