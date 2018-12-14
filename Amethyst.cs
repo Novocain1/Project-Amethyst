@@ -3,7 +3,7 @@ using Vintagestory.GameContent;
 
 namespace ProjectAmethyst
 {
-    public class ProjectPurpleRock : ModSystem
+    public class ProjectAmethyst : ModSystem
     {
         public override void Start(ICoreAPI api)
         {
