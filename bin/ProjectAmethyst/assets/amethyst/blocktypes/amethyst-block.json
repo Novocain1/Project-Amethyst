@@ -1,0 +1,19 @@
+{
+	code: "amethyst-block",
+	creativeinventory: { "general": ["*"], "construction": ["*"] },
+	shape: { base: "block/basic/cube" },
+	blockmaterial: "Stone",
+	drawtype: "cube",
+	textures: {
+		all: { base: "block/amethyst-block" }
+	},
+	resistance: 5,
+	sounds: {
+		walk: "walk/stone",
+		byTool: {
+			"Pickaxe": { hit: "game:block/rock-hit-pickaxe", break: "game:block/rock-break-pickaxe" }
+		}
+	},
+	maxStackSize: 64,
+	materialDensity: 1000
+}

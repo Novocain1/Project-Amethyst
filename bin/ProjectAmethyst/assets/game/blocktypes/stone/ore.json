@@ -1,0 +1,69 @@
+{
+	code: "ore",
+	"__comment": "BlockOre only contains a few lines of code to replace flint ore into plain stone",
+	class: "BlockOre",
+	blockmaterial: "Ore",
+	behaviors: [{name: "BreakIfFloating"}],
+	variantgroups: [
+		{ loadFromProperties: "block/orewithflint" },
+		{ loadFromProperties: "block/rock" }
+	],
+	creativeinventory: { "general": ["*"], "terrain": ["*"] },
+	shape: { base: "block/basic/cube" },
+	drawtype: "cube",
+	textures: {
+		all: {
+			base: "block/stone/rock/{rock}",
+			overlays: [ "block/stone/ore/{orewithflint}1" ],
+			alternates: [
+				{ base: "block/stone/rock/{rock}", overlays: [ "block/stone/ore/{orewithflint}2" ] },
+				{ base: "block/stone/rock/{rock}", overlays: [ "block/stone/ore/{orewithflint}3" ] }
+			]
+		}
+	},
+	replaceable: 100,
+	resistance: 8,
+	sounds: {
+		walk: "walk/stone",
+		byTool: {
+			"Pickaxe": { hit: "block/rock-hit-pickaxe", break: "block/rock-break-pickaxe" }
+		}
+	},
+	requiredMiningTierByType: {
+		"ore-amethyst-*": 4,
+		"ore-lignite-*": 2,
+		"ore-bituminouscoal-*": 3,
+		"ore-nativecopper-*": 2,
+		"ore-limonite-*": 3,
+		"ore-galena-*": 2,
+		"ore-flint-*": 0,
+		"ore-cassiterite-*": 2,
+		"ore-chromite-*": 5,
+		"ore-platinum-*": 5,
+		"ore-ilmenite-*": 5,
+		"ore-sphalerite-*": 2,
+		"ore-rocksalt_sylvite-*": 2,
+		"ore-lapislazuli-*": 3,
+		"ore-diamond-*": 4,
+		"ore-emerald-*": 4,
+		"ore-bismuthinite-*": 2,
+		"ore-quartz-*": 3,
+		"ore-quartz_nativesilver-*":3 ,
+		"ore-quartz_nativegold-*": 3,
+		"ore-rocksalt-*": 2,
+		"ore-sulfur-*": 2,
+		"ore-magnetite-*": 3
+	},
+	dropsByType: {
+		"ore-quartz-*": [
+			{ type: "item", code: "clearquartz",  quantity: { avg: 0.2, var: 0 }, lastDrop: true },
+			{ type: "item", code: "ore-{orewithflint}",  quantity: { avg: 1.25, var: 0 }  }
+		],
+		"ore-flint-*": [
+			{ type: "item", code: "flint",  quantity: { avg: 1.25, var: 0 }, lastDrop: true },
+		],
+		"*": [ 
+			{ type: "item", code: "ore-{orewithflint}",  quantity: { avg: 1.25, var: 0 }  }
+		],
+	}
+}
